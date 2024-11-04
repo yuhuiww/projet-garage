@@ -1,0 +1,185 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff; /* Fond blanc */
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #000000; /* Texte blanc */
+    margin-top: 100px;
+}
+
+.menu {
+    opacity: 0.5;    
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Assurer que le menu est au-dessus de la bannière */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.menu form {
+    display: flex;
+    margin-left: auto;
+    margin-right: 60px;
+}
+
+.menu button {
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.menu input {
+    border: none;
+    border-bottom: 1px solid #3c3c3c7f;
+    width: 250px;
+    margin-right: 10px;
+    background-color: transparent;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    padding: 20px; /* Ajouté pour espacer les éléments */
+}
+
+.liste {
+    margin: 50px 0; /* Marges verticales */
+}
+
+.liste-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.liste-row select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.button-row {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-row button {
+    background-color: #242424c4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-row button:hover {
+    background-color: #adadad;
+}
+
+.voitures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centre les cartes dans le conteneur */
+}
+
+.voiture-card {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.voiture-card img {
+    width: 100%;
+    height: auto;
+}
+
+.voiture-info {
+    padding: 15px;
+    color: #333;
+}
+
+.voiture-info h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.voiture-info p {
+    margin: 5px 0;
+}
+
+.actions {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.actions a, .actions input[type="submit"] {
+    background-color: #962323c4;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.actions a:hover, .actions input[type="submit"]:hover {
+    background-color: #D2B48C;
+}
+
+footer {
+    background-color: #242424c4;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
